@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Linear Function Finder</title>
+</head>
+<body>
+  <!-- نموذج إدخال القيم -->
+  <form id="inputForm">
+    <div>
+      <label for="xInsert">X Value:</label>
+      <input id="xInsert" name="xInsert" type="number" placeholder="Enter x value" />
+    </div>
+    <div>
+      <label for="yInsert">Y Value:</label>
+      <input id="yInsert" name="yInsert" type="number" placeholder="Enter y value" />
+    </div>
+    <button type="button" onclick="insertValue()">Insert Values</button>
+  </form>
+
+  <!-- عرض القيم المدخلة باستخدام جدول -->
+  <div id="inserts">
+    <table>
+      <thead>
+        <tr>
+          <th>X Values</th>
+          <th>Y Values</th>
+        </tr>
+      </thead>
+      <tbody id="valuesTableBody">
+        <!-- سيتم إضافة القيم هنا باستخدام JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- عرض النتيجة -->
+  <div id="resultContainer">
+    <p id="result">Result will show here</p>
+  </div>
+
+  <!-- أزرار التحكم -->
+  <div id="controls">
+    <button onclick="clearValues()">Clear Values</button>
+    <button onclick="findEquation()">Find Equation</button>
+  </div>
+
+  <!-- تضمين ملفات JavaScript -->
+  <script src="scripts/mainScript.js"></script>
+  <script src="scripts/finder.Script.js"></script>
+</body>
+</html>
